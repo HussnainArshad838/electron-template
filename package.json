@@ -5,8 +5,8 @@
   "main": "public/electron.js",
   "homepage": "./",
   "author": {
-    "name": "Your Name",
-    "email": "your.email@example.com"
+    "name": "Hussnain Arshad",
+    "email": "hussnainrajpoot5415@gmail.com"
   },
   "description": "My awesome Electron app",
   "dependencies": {

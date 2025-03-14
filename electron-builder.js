@@ -18,6 +18,6 @@ module.exports = {
     },
     linux: {
         target: "deb",
-        maintainer: "Hussnain <hussnainrajpoot5415@gmail.com>"
+        maintainer: "Hussnain Arshad <hussnainrajpoot5415@gmail.com>"
     }
 };
