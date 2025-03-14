@@ -17,6 +17,7 @@ module.exports = {
         target: "nsis"
     },
     linux: {
-        target: "deb"
+        target: "deb",
+        maintainer: "Your Name <your.email@example.com>" // Added maintainer info
     }
 };

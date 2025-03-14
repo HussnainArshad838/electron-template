@@ -1,16 +1,18 @@
-const { app, BrowserWindow } = require('electron');
+const { app, BrowserWindow, screen } = require('electron');
 const path = require('path');
 const isDev = require('electron-is-dev');
-
 
 // Keep a global reference of the window object to prevent it from being garbage collected
 let mainWindow;
 
 function createWindow() {
-    // Create the browser window
+    // Get the screen size
+    const { width, height } = screen.getPrimaryDisplay().workAreaSize;
+
+    // Create the browser window with maximum dimensions
     mainWindow = new BrowserWindow({
-        width: 800,
-        height: 600,
+        width: width,
+        height: height,
         webPreferences: {
             nodeIntegration: true,
             contextIsolation: false,
@@ -25,10 +27,9 @@ function createWindow() {
             : `file://${path.join(__dirname, '../build/index.html')}`
     );
 
-    // Open DevTools in development mode
-    if (isDev) {
-        mainWindow.webContents.openDevTools({ mode: 'detach' });
-    }
+    // DevTools code removed to keep it hidden
+    // Optional: you can maximize the window to ensure it takes full screen
+    mainWindow.maximize();
 
     // Handle window closing
     mainWindow.on('closed', () => {
