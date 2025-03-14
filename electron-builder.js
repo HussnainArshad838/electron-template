@@ -18,6 +18,6 @@ module.exports = {
     },
     linux: {
         target: "deb",
-        maintainer: "Your Name <your.email@example.com>" // Added maintainer info
+        maintainer: "Hussnain <hussnainrajpoot5415@gmail.com>"
     }
 };

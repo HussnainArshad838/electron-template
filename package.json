@@ -4,6 +4,11 @@
   "private": true,
   "main": "public/electron.js",
   "homepage": "./",
+  "author": {
+    "name": "Your Name",
+    "email": "your.email@example.com"
+  },
+  "description": "My awesome Electron app",
   "dependencies": {
     "@tailwindcss/vite": "^4.0.14",
     "@testing-library/dom": "^10.4.0",
@@ -30,7 +35,8 @@
     "react-test": "react-scripts test",
     "react-eject": "react-scripts eject",
     "electron-build": "electron-builder --config electron-builder.js",
-    "build": "npm run react-build && npm run electron-build",
+    "build": "npm run react-build",
+    "desktop-build": "npm run react-build && npm run electron-build",
     "start": "concurrently \"cross-env BROWSER=none npm run react-start\" \"wait-on http://localhost:3000 && electron .\"",
     "release": "npm run react-build && electron-builder --config electron-builder.js --publish=always"
   },
