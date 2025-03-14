@@ -27,6 +27,7 @@
     "electron": "^35.0.1",
     "electron-builder": "^25.1.8",
     "electron-is-dev": "^3.0.1",
+    "typescript": "^5.8.2",
     "wait-on": "^8.0.3"
   },
   "scripts": {
